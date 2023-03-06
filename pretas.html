@@ -121,6 +121,11 @@
         vez = vezRecebida;
         console.log("vez recebida do servidor");
       });
+      // se o servidor mandar reiniciar
+      socket.on("reiniciar", function () {
+        // limpa o texto do vencedor
+        document.getElementById("vencedor").innerHTML = "";
+      });
       // crie uma var para indicar quais peças o jogador pode mover com base no url
       var player = 1;
 
@@ -204,7 +209,7 @@
         // se o player 2 ganhar mostre uma mensagem no h2 com o id vencedor
         if (cont2 == 0) {
           document.getElementById("vencedor").innerHTML =
-            "A vitória é das brancas";
+            "A vitória é das Pretas";
         }
       }
       socket.on("board", function (boardRecebida) {

@@ -73,6 +73,7 @@ io.on("connection", function (socket) {
     vez = 2;
     io.emit("board", board);
     io.emit("vez", vez);
+    io.emit("reiniciar");
   });
 });
 
