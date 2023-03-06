@@ -10,6 +10,9 @@ app.get("/pretas", (req, res) => {
 app.get("/brancas", (req, res) => {
   res.sendFile(__dirname + "/brancas.html");
 });
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/index.html");
+});
 // Matriz da posição do tabuleiro
 var board = [
   [0, 1, 0, 1, 0, 1, 0, 1],
