@@ -4,10 +4,10 @@ Este é um tabuleiro de damas online criado com códigos gerados pelo
 
 Clone o projeto e dentro da pasta execute o comando:
 ```
-npm start ou node server.js
+npm install e npm start
 ```
 
-Após executar o comando acima o programa vai estar rodando na porta 3000 do seu computador, você pode acessar usando a seguinte url no seu navegador:
+Após executar o comando acima seram baixadas todas as dependencias e o programa vai estar rodando na porta 3000 do seu computador, você pode acessar usando a seguinte url no seu navegador:
 ```
 localhost:3000
 ```
